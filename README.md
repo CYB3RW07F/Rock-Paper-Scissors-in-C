@@ -13,7 +13,7 @@ A fun, simple Rock, Paper, Scissors game written in C. Challenge the CPU and see
 3. The computer makes a random choice.
 4. The game announces the winner (or a tie) and you can play again.
 
-(Very complex, I know...)
+_(Very complex, I know...)_
 
 ### Requirements
 * A C compiler such as: gcc (recommended)
@@ -28,26 +28,37 @@ gcc -o rps rps.c
 ./rps
 ```
 
-### Example
+### Win Example
 ```
-Welcome to Rock, Paper, Scissor in C!
-Rock(1), Paper(2), or Scissor (3)?
-1
+Rock(1), Paper(2), Scissors(3) or 0 to quit: 1
+You: Rock | CPU: Scissors
 
-You chose: Rock
-The CPU chose: Paper
+Your Rock beats the CPU's Scissors, you win!
+```
 
-You lost!
+### Draw Example
+```
+Rock(1), Paper(2), Scissors(3) or 0 to quit: 2
+You: Paper | CPU: Paper
 
-Press Enter to continue...
-(loop)
+You both have the same move, it's a draw!
+```
+
+### Lose Example
+```
+Rock(1), Paper(2), Scissors(3) or 0 to quit: 2
+You: Paper | CPU: Scissors
+
+Your Paper loses to the CPU's Scissors, you lose!
 ```
 
 ### Project Structure
-rps.c — the main game source code
+* rps.c (main game source code)
 
 ### License
 
-MIT
+MIT License
 
 This project is made for fun—feel free to improve it and submit suggestions or pull requests!
+
+**Disclaimer** _No artificial intelligence (AI) was used in the creation of this Git project. All code and documentation were written manually by the project contributors._
